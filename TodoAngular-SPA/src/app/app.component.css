@@ -110,3 +110,28 @@ h1 {
   background-color: #f44336;
   color: white;
 }
+/* Add cursor pointer for better UX */
+.todo-view span {
+  cursor: pointer;
+}
+
+.todo-view span:hover {
+  background-color: #f0f0f0;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-todo input:focus,
+.todo-edit input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}

@@ -7,7 +7,7 @@ import { Todo } from './todo';
   providedIn: 'root'
 })
 export class TodoService {
-  private apiUrl =   'http://16.50.44.110:5196/api/todos';
+  private apiUrl =   'http://16.51.188.149:5196/api/todos';
 
   constructor(private http: HttpClient) {}
 
