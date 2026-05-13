@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.angular/
+dist/
+
+# .NET build outputs
+**/bin/
+**/obj/
+**/out/
+
+# User-specific files
+**/Properties/launchSettings.json
+*.user
+*.suo
+*.userosscache
+*.vs/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
