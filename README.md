@@ -1,9 +1,11 @@
 
 
+
+This setup is demonstrated using dNet on ubuntu, AWS - t3.medium, Using 'visual studio code' setup on xfce UI as remote desktop server.
+The project consists of dNet core web backend and seperate SPA Angular client for frontend.
+
 Operations:
 Add, Edit, Delete.
-
-
 
 <img width="1889" height="960" alt="RemoteEnvs" src="https://github.com/user-attachments/assets/b492a653-9101-4464-a227-58e67216926f" />
 
@@ -157,8 +159,10 @@ ng serve --host 0.0.0.0
 Browser Path:
 http://16.51.188.149:4200/api/todos
 
-
-
+Additional Notes:
+Remember to whitelist ip security groups (ports) when using remote setup.
+launchSettings.json and todo.service.ts are key files for url-path config as mentioned above,
+although alternate methods can be used for production grade secure access including keystore files.
 
 
 
