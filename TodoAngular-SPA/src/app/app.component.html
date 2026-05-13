@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Todo App</h1>
+  
+  <div class="add-todo">
+    <input 
+      [(ngModel)]="newTodoTitle" 
+      placeholder="Enter a new todo..."
+      (keyup.enter)="addTodo()"
+    />
+    <button (click)="addTodo()">Add Todo</button>
+  </div>
+
+  <div class="todo-list">
+    <div *ngFor="let todo of todos" class="todo-item">
+      <div *ngIf="editingTodo?.id !== todo.id" class="todo-view">
+        <input 
+          type="checkbox" 
+          [checked]="todo.isComplete"
+          (change)="toggleTodo(todo)"
+        />
+        <span [class.completed]="todo.isComplete">{{ todo.title }}</span>
+        <button (click)="startEdit(todo)">Edit</button>
+        <button (click)="deleteTodo(todo.id)">Delete</button>
+      </div>
+      
+      <div *ngIf="editingTodo?.id === todo.id" class="todo-edit">
+        <input [(ngModel)]="editingTodo.title" />
+        <button (click)="saveEdit()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
