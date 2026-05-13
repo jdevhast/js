@@ -1,9 +1,23 @@
+
+
 Operations:
 Add, Edit, Delete.
 
 
 
 <img width="1889" height="960" alt="RemoteEnvs" src="https://github.com/user-attachments/assets/b492a653-9101-4464-a227-58e67216926f" />
+
+
+Clone Git Repo and open project at open
+
+JS>
+
+ --TodoAngular-SPA
+ 
+ --TodoApi
+ 
+ --.gitignore
+
 
 
 
@@ -56,7 +70,18 @@ EOF
 
 ////////////////   TEST API Backend /////////////
 
+
+
+
+
+
 # Step 4: Run dotnet API backend
+cd TodoApi
+
+dotnet restore
+
+dotnet build
+
 dotnet run --urls "http://0.0.0.0:5196"
 
 
