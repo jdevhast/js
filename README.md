@@ -137,7 +137,7 @@ ubuntu@ip-172-31-28-44:~/js/TodoAngular-SPA$
 
 
 
-# Step 5: Modify API path - for Public IP
+# Step 5: Modify API path - for yout Public IP
 
 todo.service.ts:
 private apiUrl =   'http://16.51.188.149:5196/api/todos';
