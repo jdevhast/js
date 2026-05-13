@@ -1,4 +1,5 @@
-
+Operations:
+Add, Edit, Delete.
 
 
 
@@ -60,8 +61,7 @@ dotnet run --urls "http://0.0.0.0:5196"
 
 
 
-
-
+Test:
 
 curl -X POST http://16.51.188.149:5196/api/todos \
   -H "Content-Type: application/json" \
