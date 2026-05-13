@@ -20,7 +20,7 @@ JS>
 
 
 
-
+.NET 10 & Angular v21.2.0
 
 # Step 1: Install SPA templates if not already installed:
 dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates
