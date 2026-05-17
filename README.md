@@ -1,6 +1,14 @@
 
+Todo:
+   Change im-mem data to persistent (postgress)
+   
+   add login user, capture challenge, pw oauth,session state awareness (remove global) add visitor count
+   
+   add seperate testing application project
+   
+   hosting on DO (linux & dNet env)
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------
 This setup is demonstrated using dNet on ubuntu, AWS - t3.medium, Using 'visual studio code' setup on xfce UI as remote desktop server.
 The project consists of dNet core web backend and seperate SPA Angular client for frontend.
 
@@ -163,6 +171,16 @@ Additional Notes:
 Remember to whitelist ip security groups (ports) when using remote setup.
 launchSettings.json and todo.service.ts are key files for url-path config as mentioned above,
 although alternate methods can be used for production grade secure access including keystore files.
+
+
+
+
+
+
+
+
+
+
 
 
 
